@@ -12,7 +12,7 @@ const NOIR_BASE_SPEED = 2.0;
 const EXTRA_BOT_SPEED = 2.0; 
 const TAG_DISTANCE = 1.3;
 const DECISION_INTERVAL = 0.2; 
-const ROUND_DURATION = 45.0; // Increased time for elimination mode
+const ROUND_DURATION = 27.0; // Changed time for elimination mode
 
 // Physics
 const GRAVITY = 35;
@@ -64,9 +64,7 @@ const EXTRA_RUNNERS: ExtraBotConfig[] = [
 ];
 
 // Additional Taggers (excluding Red)
-const EXTRA_TAGGERS: ExtraBotConfig[] = [
-  { id: 'brown', color: '#8B4513', initialPos: [-12, GROUND_LEVEL, 12] },
-];
+const EXTRA_TAGGERS: ExtraBotConfig[] = [];
 
 const TagGame = () => {
   const redRef = useRef<THREE.Group>(null);
